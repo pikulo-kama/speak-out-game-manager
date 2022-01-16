@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_animation"
+    tools:context=".activity.TeamsActivity">
+
+    <com.drabazha.speakout.view.TeamListView
+        android:id="@+id/expLvTeamList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@color/transparent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:maxHeight="465dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPlayerNameInputLabel"
+        android:layout_width="121dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/teko_medium"
+        android:gravity="left"
+        android:labelFor="@id/etTeamNameInput"
+        android:text="Team Name"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/etTeamNameInput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etPlayerNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="52dp"
+        android:autofillHints="You team name here"
+        android:ems="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etTeamNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:autofillHints="You team name here"
+        android:ems="10"
+        app:layout_constraintBottom_toTopOf="@+id/tvTeamNameInputLabel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTeamNameInputLabel"
+        android:layout_width="125dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/teko_medium"
+        android:gravity="left"
+        android:labelFor="@id/etPlayerNameInput"
+        android:text="Player Name"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/etPlayerNameInput"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnFormTeam"
+        android:layout_width="125dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#326273"
+        android:clickable="false"
+        android:onClick="onClickFormTeam"
+        android:text="Form Team"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
+        app:layout_constraintStart_toEndOf="@+id/etPlayerNameInput" />
+
+    <Button
+        android:id="@+id/btnAddTeam"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="#5C9EAD"
+        android:clickable="false"
+        android:onClick="onClickAddTeam"
+        android:text="Add"
+        app:layout_constraintBottom_toTopOf="@+id/etTeamNameInput"
+        app:layout_constraintStart_toEndOf="@+id/tvPlayerNameInputLabel" />
+
+    <Button
+        android:id="@+id/btnAddPlayer"
+        android:layout_width="75dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="5dp"
+        android:backgroundTint="#5C9EAD"
+        android:clickable="false"
+        android:onClick="onClickAddPlayer"
+        android:text="Add"
+        app:layout_constraintStart_toEndOf="@+id/tvTeamNameInputLabel"
+        app:layout_constraintTop_toBottomOf="@+id/etTeamNameInput" />
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#E39774"
+        android:clickable="false"
+        android:onClick="onClickStartGame"
+        android:text="Start Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toEndOf="@+id/etPlayerNameInput" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:onClick="onClickOpenSettings"
+        android:layout_width="41dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFormTeam"
+        app:srcCompat="@drawable/ic_settings" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

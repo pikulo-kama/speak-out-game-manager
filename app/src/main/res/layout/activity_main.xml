@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onOpenTeamsActivity"
+    tools:context=".activity.MainActivity">
+
+    <View
+        android:id="@+id/vLayoutGradient"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_animation"
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/tvTapOnScreenMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#95ffffff"
+        android:layout_marginTop="32dp"
+        android:text="@string/mainScreenMessage"
+        android:textColor="@color/colorInAppLogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <ImageView
+        android:id="@+id/ivInAppLogo"
+        android:layout_width="261dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vLayoutGradient"
+        app:srcCompat="@drawable/ic_in_app_logo" />
+
+    <TextView
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/teko_medium"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textSize="78dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vLayoutGradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivInAppLogo"
+        app:layout_constraintVertical_bias="0.561" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="61dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:fontFamily="@font/teko_medium"
+        android:text="or?"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="176dp"
+        android:layout_height="755dp"
+        android:background="@drawable/rectangle"
+        android:rotation="50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivInAppLogo"
+        app:layout_constraintStart_toStartOf="@+id/ivInAppLogo"
+        app:layout_constraintTop_toTopOf="@+id/vLayoutGradient" />
+
+    <TextView
+        android:layout_width="214dp"
+        android:layout_height="273dp"
+        android:rotation="25"
+        android:text="▼"
+        android:textColor="@color/transparent_75"
+        android:textSize="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.316" />
+
+    <TextView
+        android:layout_width="202dp"
+        android:layout_height="273dp"
+        android:rotation="-154"
+        android:text="▼"
+        android:textColor="@color/transparent_75"
+        android:textSize="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

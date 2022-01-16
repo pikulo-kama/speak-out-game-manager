@@ -1,0 +1,9 @@
+<rotate android:fromDegrees="270"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <vector android:alpha="0.9" android:height="24dp" android:tint="#C1D2CA"
+        android:viewportHeight="24" android:viewportWidth="24"
+        android:width="24dp" xmlns:android="http://schemas.android.com/apk/res/android">
+        <path android:fillColor="@android:color/white" android:pathData="M8.5,5l-4.5,0l5,7l-5,7l4.5,0l5,-7z"/>
+    </vector>
+</rotate>
+

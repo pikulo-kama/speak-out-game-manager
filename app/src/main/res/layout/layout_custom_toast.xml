@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlToastContainer">
+
+    <RelativeLayout
+        android:id="@+id/rlToastParent"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvToastBodyParent"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:id="@+id/rlToastBody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#50db1616"
+                android:clickable="true"
+                android:focusable="true">
+
+                <FrameLayout
+                    android:id="@+id/flToastBorder"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:background="#5c1717" />
+
+                <TextView
+                    android:id="@+id/tvToastMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="17dp"
+                    android:ellipsize="end"
+                    android:lines="1"
+                    android:textColor="#131313"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
